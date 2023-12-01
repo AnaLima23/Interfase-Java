@@ -48,6 +48,11 @@ public class TelaLogin extends javax.swing.JFrame {
         jBtnLogar.setMnemonic('l');
         jBtnLogar.setText("Logar");
         jBtnLogar.setToolTipText("Logar no Sistema");
+        jBtnLogar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jBtnLogarMouseClicked(evt);
+            }
+        });
         jBtnLogar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBtnLogarActionPerformed(evt);
@@ -146,6 +151,12 @@ public class TelaLogin extends javax.swing.JFrame {
     private void jBtnCancelarKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jBtnCancelarKeyPressed
         System.exit(0);
     }//GEN-LAST:event_jBtnCancelarKeyPressed
+
+    private void jBtnLogarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jBtnLogarMouseClicked
+        // TODO add your handling code here:
+        Exemplo7 tela= new Exemplo7();
+        tela.setVisible(true);
+    }//GEN-LAST:event_jBtnLogarMouseClicked
 
     /**
      * @param args the command line arguments

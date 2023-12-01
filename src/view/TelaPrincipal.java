@@ -38,7 +38,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jMnArquivo.setMnemonic('a');
         jMnArquivo.setText("Arquivo");
 
-        jImnExemplo3.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_3, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        jImnExemplo3.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_3, java.awt.event.InputEvent.CTRL_MASK));
         jImnExemplo3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/java.gif"))); // NOI18N
         jImnExemplo3.setMnemonic('3');
         jImnExemplo3.setText("Exemplo");
@@ -53,6 +53,16 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         jMenu2.setMnemonic('b');
         jMenu2.setText("Sobre");
+        jMenu2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jMenu2MouseClicked(evt);
+            }
+        });
+        jMenu2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenu2ActionPerformed(evt);
+            }
+        });
         jMenuBar1.add(jMenu2);
 
         Sair.setMnemonic('s');
@@ -89,6 +99,17 @@ public class TelaPrincipal extends javax.swing.JFrame {
     private void SairMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SairMouseClicked
        System.exit(0);
     }//GEN-LAST:event_SairMouseClicked
+
+    private void jMenu2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenu2ActionPerformed
+
+    private void jMenu2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenu2MouseClicked
+        // TODO add your handling code here:Exemplo7 tela= new Exemplo7();
+        Exemplo7 tela1= new Exemplo7();
+        tela1.setVisible(true);
+        
+    }//GEN-LAST:event_jMenu2MouseClicked
 
     /**
      * @param args the command line arguments
